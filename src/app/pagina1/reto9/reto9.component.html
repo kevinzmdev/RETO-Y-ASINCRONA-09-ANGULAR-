@@ -1,0 +1,16 @@
+<b>RETO 09</b>
+<form class="m-4">
+    <span>
+        <input type="checkbox" name="checkbox" id="" [(ngModel)]="checkbox">
+        Is active
+    </span>
+    
+    <div *ngIf="checkbox; else falso" class="w-25 bg-secondary">
+        <img src="../../../assets/imagen.png" alt="" class="w-100">
+        <p>Es un framework para aplicaciones web desarrollado en Typescript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página".</p>
+    </div>
+    <ng-template #falso>
+        <p></p>
+        <b>Activa el checkbox para mostrar el contenido</b>
+    </ng-template>
+</form>
